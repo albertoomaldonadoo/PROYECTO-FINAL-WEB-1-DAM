@@ -20,18 +20,7 @@ document.querySelectorAll('.topnav a').forEach(link => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const phone = document.querySelector('.phone');
 
-  // Pausar la animación al pasar el ratón y reanudarla al salir
-  phone.addEventListener('mouseenter', () => {
-      phone.style.animationPlayState = 'paused';
-  });
-
-  phone.addEventListener('mouseleave', () => {
-      phone.style.animationPlayState = 'running';
-  });
-});
 filterSelection("all") // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
