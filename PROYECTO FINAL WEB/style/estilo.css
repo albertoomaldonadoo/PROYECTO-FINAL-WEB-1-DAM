@@ -20,11 +20,14 @@ body {
 }
 #wrapper {width: 83%;
   margin: auto;}
+
+
 /*------------------------------------------------------------------------------*/
 
 /* ESTILO GENERAL DE LOS TITULOS */
 
 /*------------------------------------------------------------------------------*/
+
 #todoslostitulos {
   text-align: center;
   margin: auto;
@@ -73,7 +76,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para distinguir la nav */
   position: sticky;
   top: 0;
-  width: 49%;
+  width: 67%;
 }
 
 nav {
@@ -116,6 +119,8 @@ nav {
 .topnav .icon {
     display: none;
 }
+
+
 /*------------------------------------------------------------------------------*/
 
 /* ESTILO GENERAL DE LA HERO */
