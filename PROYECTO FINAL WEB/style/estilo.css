@@ -14,12 +14,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #0d1b2a; /* Fondo oscuro para resaltar el efecto */
-  font-family: 'Poppins', sans-serif; /* Fuente moderna */
-  color: white; /* Texto blanco para contraste */
+  background-color: #0d1b2a; 
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
+
 #wrapper {width: 83%;
-  margin: auto;}
+  margin: auto;
+}
 
 
 /*------------------------------------------------------------------------------*/
@@ -66,17 +68,16 @@ body {
 /*------------------------------------------------------------------------------*/
 
 .topnav {
-  background-color: rgb(12, 41, 109); /* Fondo blanco */
+  background-color: rgb(12, 41, 109);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: left;
-  padding: 0 20px; /* Ajusta el padding para separar los elementos */
-  border-radius: 20px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para distinguir la nav */
+  padding: 0 20px;
+  border-radius: 20px;
   position: sticky;
   top: 0;
-  width: 54%;
+  width: 40%;
 }
 
 nav {
@@ -126,6 +127,7 @@ nav {
 /* ESTILO GENERAL DE LA HERO */
 
 /*------------------------------------------------------------------------------*/
+
 .hero {
   position: relative;
   height: 100vh;
@@ -140,7 +142,7 @@ nav {
 
 .hero video {
   border: 1px solid transparent;
-  border-radius: 30px;
+  border-radius: 50px;
   padding-top: 30px;
   position: absolute;
   top: 0;
@@ -148,27 +150,21 @@ nav {
   width: 100%;
   height: 88%;
   object-fit: cover;
-  filter: brightness(0.5);
   z-index: -1;
-}
-
-.hero-content {
-  z-index: 1;
-  max-width: 800px;
-  padding: 20px;
+  filter: brightness(0.5);
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 50px;
+  margin-bottom: 80px;
   text-transform: uppercase;
   color: #fff;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #d0d7de;
+  font-size: 20px;
+  margin-bottom: 80px;
+  color: white;
 }
 
 .hero a {
@@ -177,21 +173,18 @@ nav {
   background-color: #0078ff;
   color: white;
   border-radius: 30px;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
-.hero a:hover {
-  background-color: #005bb5;
-}
 
 
 /*------------------------------------------------------------------------------*/
 
-/* ESTILO DE LA PRIMERO SECCION MEJORES SITIOS Y ACTIVIDADES */
+/* ESTILO DE LOS MEJORES MODELOS */
 
 /*------------------------------------------------------------------------------*/
 
-.best-activities {
+.mejoresmodelos {
   text-align: center;
   padding: 50px;
 }
@@ -527,6 +520,48 @@ form textarea {
 
 /*------------------------------------------------------------------------------*/
 
+/* ESTILO DE LA PAGINA SOBRE NOSOTROS */
+
+/*------------------------------------------------------------------------------*/
+
+.seccion-sobre-nosotros {
+  text-align: center;
+  padding: 2rem;
+}
+
+
+.tarjetas-sobre-nosotros {
+  display: flex;
+  justify-content: center;
+  gap: 95px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background-color: #0d1b3c;
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid rgb(12, 41, 109);
+  animation: pulse-border 2s infinite;
+}
+
+.tarjeta h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.tarjeta p {
+  color: #d4d4d4;
+  padding: 20px;
+  margin: auto;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
 /* ESTILO DE EL FOOTER */
 
 /*------------------------------------------------------------------------------*/
@@ -629,12 +664,77 @@ form textarea {
   /*************RESPONSIVILIDAD TABLET***************/
 
 
-@media only screen and (width<900px) {
-  .grid-4 {grid-template-columns: 50% 50%;}
-  .grid-3 {grid-template-columns: 50% 50% 50% 50%;}
-  #IMAGENTEXTO {width: 50%;}
-}
+  @media screen and (max-width: 768px) {
 
+    .topnav {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .topnav a {
+      font-size: 14px;
+      padding: 10px 8px;
+    }
+  
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 50px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+  
+    .grid-4 {
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  
+    .col-4 {
+      margin: 0 10px;
+    }
+  
+    .containermarcas {
+      width: 150px;
+      height: 100px;
+    }
+  
+    .grid-1 {
+      grid-template-columns: 1fr;
+    }
+  
+    .col-1 {
+      width: 90%;
+    }
+  
+    .map-box {
+      height: 200px;
+      width: 90%;
+    }
+  
+    form input, form textarea {
+      width: 80%;
+    }
+  
+    .submit-btn {
+      width: 80%;
+    }
+  
+    .rowgallery {
+      width: 100%;
+    }
+  
+    .tarjetas-sobre-nosotros {
+      gap: 50px;
+    }
+  
+    .tarjeta {
+      width: 90%;
+    }
+  }
 
 /*************RESPONSIVILIDAD MOVIL***************/
 
@@ -655,7 +755,77 @@ form textarea {
 
 a {text-decoration: none;
   color: inherit;}
+  @media screen and (max-width: 480px) {
 
+    .topnav {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .topnav a {
+      font-size: 12px;
+      padding: 8px 6px;
+    }
+  
+    .hero h1 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  
+    .hero p {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+  
+    .grid-4 {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .col-4 {
+      margin: 0 5px;
+    }
+  
+    .containermarcas {
+      width: 120px;
+      height: 80px;
+    }
+  
+    .grid-1 {
+      grid-template-columns: 1fr;
+    }
+  
+    .col-1 {
+      width: 100%;
+    }
+  
+    .map-box {
+      height: 180px;
+      width: 100%;
+    }
+  
+    form input, form textarea {
+      width: 90%;
+    }
+  
+    .submit-btn {
+      width: 90%;
+    }
+  
+    .rowgallery {
+      width: 100%;
+    }
+  
+    .tarjetas-sobre-nosotros {
+      gap: 20px;
+    }
+  
+    .tarjeta {
+      width: 100%;
+    }
+  }
 
 /*************RESPONSIVILIDAD BARRA NAVEGACIÓN***************/
 
