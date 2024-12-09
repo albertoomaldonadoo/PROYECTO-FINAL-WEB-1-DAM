@@ -84,13 +84,13 @@ nav {
   position: sticky;
   top: 20px;
   z-index: 140;
-  margin-top: 10px; /* Separar la nav del borde superior */
+  margin-top: 10px;
 }
 
 .topnav .logo {
     display: flex;
     align-items: center;
-    justify-content: left; /* Alinea el logo al lado izquierdo */
+    justify-content: left;
 }
 
 .topnav .logo img {
@@ -260,6 +260,7 @@ nav {
     border-color: rgba(10, 139, 238, 0.5);
   }
 }
+
 /*------------------------------------------------------------------------------*/
 
 /* ESTILO DE LA GALERIA 3D DE LAS MARCAS */
@@ -335,230 +336,6 @@ nav {
   from { transform: rotateY(0deg); }
   to { transform: rotateY(360deg); }
 }
-
-/*------------------------------------------------------------------------------*/
-
-/* ESTILO DE LA PPAGINA DE CONTACTO */
-
-/*------------------------------------------------------------------------------*/
-
-.pagina-contacto {
-  text-align: center;
-  padding: 10px;
-}
-
-.grid-1 {
-  display: grid;
-  gap: 15px;
-  align-items: stretch; 
-  margin-top: 50px;
-  margin-bottom: 15px;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.col-1 {
-  margin: auto;
-  border: 1px solid rgb(12, 41, 109);
-  border-radius: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  animation: pulse-border 2s infinite;
-  width: 70%;
-}
-
-.product-image {
-  display: block;
-  margin: auto;
-  margin-bottom: 10px;
-  width: 200px;
-  height: 220px;
-}
-
-.map-box {
-  margin-bottom: 40px; 
-  margin-top: 10px; 
-  border: 2px solid #0c296d;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  height: 250px;
-  width: 80%;
-  margin: auto;
-}
-
-form {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-bottom: 40px; 
-}
-
-form label {
-  font-size: 16px;
-  color: white;
-}
-
-form input, form textarea {
-  width: 50%;
-  margin: auto;
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid rgb(12, 41, 109);
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-form textarea {
-  resize: vertical;
-}
-
-.submit-btn {
-  width: 65%;
-  margin: auto;
-  background-color: rgb(10, 139, 238);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
-}
-
-.submit-btn:hover {
-  background-color: rgb(12, 41, 109);
-}
-
-.horarios {
-  text-align: center;
-  padding: 20px;
-}
-
-.horarios ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.horarios li {
-  font-size: 1.2em;
-}
-
-
-@keyframes pulse-border {
-  0% {
-    box-shadow: 0 0 15px rgba(10, 139, 238, 0.4); 
-    border-color: rgba(10, 139, 238, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(10, 139, 238, 0.6);
-    border-color: rgba(10, 139, 238, 0.6);
-  }
-  100% {
-    box-shadow: 0 0 15px rgba(10, 139, 238, 0.4);
-    border-color: rgba(10, 139, 238, 0.4);
-  }
-}
-
-/*------------------------------------------------------------------------------*/
-
-/* ESTILO DE LA PPAGINA DE MODELOS */
-
-/*------------------------------------------------------------------------------*/
-
-.rowgallery {
-  margin: auto;
-  width: 65%;
-  
-}
-
-.rowgallery,
-.rowgallery > .column {
-  padding: 8px;
-  justify-content: center;
-}
-
-.column {
-  float: left;
-  width: 45%;
-  display: none; /*ACCION QUE FILTRA LAS COLUMNAS*/
-}
-
-.rowgallery:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.content {
-  padding: 10px;
-}
-
-.show {
-  display: flex;
-}
-
-.btngallery {
-  color: white;
-  margin-left: 15px;
-  outline: none;
-  box-shadow: 0 10px 20px rgba(40, 132, 202, 0.5);
-  padding: 12px 30px 10px;
-  background-color: #0d1b2a; 
-  font-size: 14px;
-  border: 1px solid rgb(12, 41, 109);
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.btngallery:hover {
-  background-color: #00C3FF;
-}
-
-/*------------------------------------------------------------------------------*/
-
-/* ESTILO DE LA PAGINA SOBRE NOSOTROS */
-
-/*------------------------------------------------------------------------------*/
-
-.seccion-sobre-nosotros {
-  text-align: center;
-  padding: 2rem;
-}
-
-
-.tarjetas-sobre-nosotros {
-  display: flex;
-  justify-content: center;
-  gap: 95px;
-  flex-wrap: wrap;
-}
-
-.tarjeta {
-  background-color: #0d1b3c;
-  border-radius: 10px;
-  padding: 30px;
-  width: 300px;
-  text-align: center;
-  border: 1px solid rgb(12, 41, 109);
-  animation: pulse-border 2s infinite;
-}
-
-.tarjeta h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
-}
-
-.tarjeta p {
-  color: #d4d4d4;
-  padding: 20px;
-  margin: auto;
-}
-
 
 /*------------------------------------------------------------------------------*/
 
@@ -827,38 +604,6 @@ a {text-decoration: none;
     }
   }
 
-/*************RESPONSIVILIDAD BARRA NAVEGACIÓN***************/
-
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-  float: right;
-  display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-  }
-  .topnav.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
-  }
-}
-/*************RESPONSIBILIDAD OPINION**************/
-
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-  width: 100%;
-  }
-}
-
 /*************RESPONSIVILIDAD FOOTER***************/
 
 @media (max-width: 991px) {
@@ -869,68 +614,5 @@ a {text-decoration: none;
   .footer-links {
       width: 100%;
       margin-bottom: 30px;
-  }
-}
-/*************RESPONSIVILIDAD GENERAL***************/
-
-@media (max-width: 1200px) {
-  .grid-4 {grid-template-columns: repeat(2, 1fr);}
-  .grid-3 {grid-template-columns: repeat(2, 1fr);}
-  .col-4 {margin: 0 20px; padding: 10px;}
-  .footer-links {width: 50%;}
-}
-
-@media (max-width: 900px) {
-  #wrapper {width: 100%;}
-  .grid-4, .grid-3 {grid-template-columns: 1fr;}
-  .col-4 {margin: 0 10px; padding: 10px;}
-  .footer-links {width: 100%; margin-bottom: 20px;}
-  .map-box {width: 100%;}
-  form input, form textarea {width: 100%;}
-}
-
-@media (max-width: 768px) {
-  .topnav {flex-direction: column; align-items: flex-start;}
-  .topnav a {text-align: left; padding: 10px 15px;}
-  .footer-row {flex-direction: column; text-align: center;}
-  .horarios ul {padding: 10px;}
-  .logo img {width: 20px; height: 20px;}
-  .buttonprimero {padding: 10px 20px;}
-}
-
-@media (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {display: block;}
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .grid-4, .grid-3, .video1, .albertovideos {grid-template-columns: 1fr;}
-  .product-image {width: 100%; height: auto;}
-}
-
-@media (max-width: 480px) {
-  .titulosglobales {font-size: 1.8rem;}
-  .subtitulosglobales {font-size: 1rem;}
-  .best-activities {padding: 20px;}
-  .buttonprimero {font-size: 14px;}
-  .btn1 {width: 100%; font-size: 12px;}
-  .map-box {height: 200px;}
-}
-
-@media (max-width: 320px) {
-  #hero {font-size: 30%;}
-  .cancelbtn, .signupbtn {width: 100%;}
-  .submit-btn {width: 100%;}
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1rem;
   }
 }
